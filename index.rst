@@ -5,8 +5,13 @@ Introduction
 ------------
 
 * My goal with this webinar is to share what I've learned teaching students to program
-  using Python to create video games. So if you are an educator, or if you work with
+  using Python to create video games, along with a new Arcade library for 2D
+  graphics.
+* So if you are an educator, or if you work with
   interns and new employees, hopefully you'll find some ideas to try.
+* If you are more of a visual learner, or if you want to follow up on anything I'm talking
+  about later, you can see my notes for this webinar at:
+  http://2017-craven-webinar.readthedocs.io
 
 Background/Overview
 -------------------
@@ -29,12 +34,13 @@ Background/Overview
 
 * Create the `Arcade Library`_
 
+  * Easy library for 2D video games
   * Fix issues with `Pygame`_
   * Faster, OpenGL based
   * Take advantage of Python 3 features like `type hinting`_.
 
-* I have a new version of my book that I'm working on that uses
-  the Arcade Library: `Learn Python with Arcade Academy`_
+* I have a new version of my on-line book that I'm working on that uses
+  the Arcade Library instead of Pygame: `Learn Python with Arcade Academy`_
 
 
 Tip 1: Revise Your Pedagogy
@@ -78,6 +84,8 @@ Tip 2: Use a Good Tool-Chain for Teaching Materials
 
 * Sphinx uses `Restructured Text`_, which is much better than editing HTML
   by hand. You can also make e-books out of it.
+* See this example of a Networking class I did:
+  https://github.com/pvcraven/networking-class/commits/master
 * You can easily build ``.rst`` files using Sphinx in PyCharm with the
   Sphinx task:
 
@@ -85,19 +93,23 @@ Tip 2: Use a Good Tool-Chain for Teaching Materials
 
 * PyCharm is a great editor to type up your restructured text files, as it can
   spell check, auto-complete rst directives, and even
-  check and let you know if you have undefined references:
+  check and let you know if you have undefined references. You can look up references.
 
 .. image:: images/rst_linting.png
 
 * It is easy to include syntax-highlighted code directly in your materials.
   You can include code snippets, or have the code in separate files.
 
+.. code-block:: python
+
+    print("Simple code snippet")
+
 .. code-block:: rst
     :caption: Including code from a different file
 
-  .. literalinclude:: ../../examples/bouncing_ball.py
-    :caption: bouncing_ball.py
-    :linenos:
+    .. literalinclude:: ../../examples/bouncing_ball.py
+        :caption: bouncing_ball.py
+        :linenos:
 
 
 * Store revisions to your materials using Git and a site like GitHub. (Note,
@@ -217,6 +229,10 @@ code that conforms to style guidelines.
 In my experience, once students got PEP-8 warnings in their editor, the percent of student code that adhered to style
 guidelines improved.
 
+.. literalinclude:: examples/tip_03_04.py
+    :caption: bouncing_ball.py
+    :linenos:
+
 Tip 5: Making IDEs Easier
 -------------------------
 
@@ -269,25 +285,17 @@ form building blocks. Make it easy to navigate. Then give tasks that requires st
 code samples and build their own program.
 
 
-Tip 7: Show how to Navigate a Stack Trace
------------------------------------------
-
-A lot of tutorials and how-tos seem to skip showing students how to read a stack trace. Create some contrived examples
-that let a student understand in the example below:
-
-.. image:: images/stack_trace.png
-
-That if their program is ``sprite_college_coins_diff_levels.py`` they likely need to look at line 83. PyCharm is nice
-that it sets these up so you only need to click on the link to go to that spot in the program. It is still necessary
-for students to learn to read stack traces, however.
-
-Tip 8: Show Students API Docs
+Tip 7: Show Students API Docs
 -----------------------------
 
 Don't just show students how to program from your materials. Make it a point to show them the API docs. Have
 them look up functions out of the API docs and use them:
 
 http://arcade.academy/quick_index.html
+
+Tip 8: Explain IDE Features As You Use Them
+-------------------------------------------
+
 
 Results
 -------

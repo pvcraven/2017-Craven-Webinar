@@ -1,0 +1,13 @@
+Tip 6
+=====
+
+Show API docs
+
+http://arcade.academy/quick_index.html
+
+Tip 7
+=====
+
+Search for code examples
+
+http://arcade.academy/examples/index.html
