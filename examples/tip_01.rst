@@ -1,7 +1,7 @@
 Tip 1
 =====
 
-Revise your pedagogy (how you teach)
+Revise your teaching materials
 
 * Don't keep rewriting learning material from scratch
 * Test your learning material like software, watch people use it.

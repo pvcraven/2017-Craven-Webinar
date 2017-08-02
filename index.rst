@@ -127,6 +127,11 @@ Tip 2: Use a Good Tool-Chain for Teaching Materials
 
 * If you teach people over-and-over, you'll end up with high-quality materials.
 
+* `Web Development <https://readthedocs.org/projects/web-development-class/>`_
+* `Networking <https://readthedocs.org/projects/networking-class/>`_
+* `Intro to Programming <https://github.com/pvcraven/arcade_book>`_
+* `3D Graphics with Blender <https://github.com/pvcraven/3d_graphics_class>`_
+
 Tip 3: Parameter and Type Hinting
 ---------------------------------
 
@@ -296,6 +301,10 @@ http://arcade.academy/quick_index.html
 Tip 8: Explain IDE Features As You Use Them
 -------------------------------------------
 
+* Moving lines up and down
+* Indent/unindent blocks of code
+* Multi-cursor
+* Go to definition
 
 Results
 -------

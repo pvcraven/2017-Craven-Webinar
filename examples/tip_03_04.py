@@ -11,6 +11,7 @@ Tip 4:
 # Function completion when you type-to
 # Pull up documentation with Ctrl-Q
 # If you try setting the background color with only 2 numbers, you'll get an type hint warning
+# (Show how to open declaration, and how type hinting is done)
 # Forget to put a space after a comma, and get a PEP-8 warning
 # This is a program a student wrote his second week of class
 # He wrote it and, like many students, also made sure PyCharm showed no issues.
@@ -21,7 +22,6 @@ import arcade
 arcade.open_window(800, 600, "Flying V")
 
 arcade.set_background_color((53, 242, 252))
-
 
 arcade.start_render()
 
